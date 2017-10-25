@@ -39,21 +39,22 @@ def select():
 
 csvDelimiter = '\t'
 words = []
-with open("eng-swe-dictionary.txt") as f:
+with open("eng-swe-dictionary.txt") as f: #TODO remove all capital letters in that file
    for line in f:
       next = WordTuple(line.split(csvDelimiter)[0], 
-                       line.split(csvDelimiter)[1])
+                       line.split(csvDelimiter)[1][:-1]) # :-1 deletes last character (CR or LF?)
       words.append(next);
 f.close()
 
 while True:
     r = randint(0, len(words) - 1)
-    print "Vad betyder", words[r].getEng(), "?",
+    print "\r\nVad betyder", words[r].getEng(), "?",
     svar = raw_input()
-    if svar is words[r].getSwe(): #TODO this is not true even for correct answers
+    if svar == words[r].getSwe(): # Must use == to compare the values
         print "Rätt"
     else:
         print "Fel. Rätt svar är", words[r].getSwe()
+
 
 
 
