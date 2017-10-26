@@ -10,7 +10,7 @@ act	spela teater
 action	handling
 activity	aktivitet
 actually	faktiskt
-add	Lägg till
+add	lägg till
 address	adress
 administration	administrering
 admit	erkänna
@@ -27,7 +27,7 @@ agree	hålla med
 agreement	avtal
 ahead	ett huvud
 air	luft
-all	Allt
+all	allt
 allow	tillåta
 almost	nästan
 alone	ensam
@@ -36,12 +36,12 @@ already	redan
 also	också
 although	fastän
 always	alltid
-American	amerikan
+american	amerikan
 among	bland
 amount	mängd
 analysis	analys
 and	och
-animal	djur-
+animal	djur
 another	annan
 answer	svar
 any	några
@@ -76,7 +76,7 @@ back	tillbaka
 bad	dålig
 bag	väska
 ball	boll
-bank	Bank
+bank	bank
 bar	bar
 base	bas
 be	vara
@@ -86,9 +86,9 @@ because	därför att
 become	bli
 bed	säng
 before	innan
-begin	Börja
+begin	börja
 behavior	beteende
-behind	Bakom
+behind	bakom
 believe	tro
 benefit	dra nytta
 best	bäst
@@ -122,7 +122,7 @@ by	av
 call	ring upp
 camera	kamera
 campaign	kampanj
-can	Kan
+can	kan
 cancer	cancer
 candidate	kandidat
 capital	huvudstaden
@@ -135,7 +135,7 @@ case	fall
 catch	fånga
 cause	orsak
 cell	cell
-center	Centrum
+center	centrum
 central	central
 century	århundrade
 certain	vissa
@@ -143,7 +143,7 @@ certainly	säkert
 chair	stol
 challenge	utmaning
 chance	chans
-change	Byta
+change	byta
 character	karaktär
 charge	avgift
 check	kolla upp
@@ -163,7 +163,7 @@ coach	tränare
 cold	kall
 collection	samling
 college	högskola
-color	Färg
+color	färg
 come	komma
 commercial	kommersiell
 common	allmänning
@@ -174,11 +174,11 @@ computer	dator
 concern	oro
 condition	skick
 conference	konferens
-Congress	kongress
+congress	kongress
 consider	överväga
 consumer	konsument
 contain	innehålla
-continue	Fortsätta
+continue	fortsätta
 control	kontrollera
 cost	kosta
 could	skulle kunna
@@ -209,7 +209,7 @@ decision	beslut
 deep	djup
 defense	försvar
 degree	grad
-Democrat	Demokrat
+democrat	demokrat
 democratic	demokratisk
 describe	beskriva
 design	design
@@ -225,7 +225,7 @@ difficult	svår
 dinner	middag
 direction	riktning
 director	direktör
-discover	Upptäck
+discover	upptäck
 discuss	diskutera
 discussion	diskussion
 disease	sjukdom
@@ -263,7 +263,7 @@ enough	tillräckligt
 enter	stiga på
 entire	hel
 environment	miljö
-environmental	miljö-
+environmental	miljö
 especially	speciellt
 establish	slå fast
 even	även
@@ -281,7 +281,7 @@ executive	verkställande
 exist	existera
 expect	förvänta
 experience	erfarenhet
-expert	expert-
+expert	expert
 explain	förklara
 eye	öga
 face	ansikte
@@ -294,7 +294,7 @@ far	långt
 fast	snabb
 father	far
 fear	rädsla
-federal	Federal
+federal	federal
 feel	känna
 feeling	känsla
 few	få
@@ -309,7 +309,7 @@ financial	finansiell
 find	hitta
 fine	bra
 finger	finger
-finish	Avsluta
+finish	avsluta
 fire	brand
 firm	fast
 first	först
@@ -318,7 +318,7 @@ five	fem
 floor	golv
 fly	flyga
 focus	fokus
-follow	Följ
+follow	följ
 food	mat
 foot	fot
 for	för
@@ -327,7 +327,7 @@ foreign	utländsk
 forget	glömma
 form	form
 former	före detta
-forward	fram-
+forward	fram
 four	fyra
 free	fri
 friend	vän
@@ -347,7 +347,7 @@ give	ge
 glass	glas
 go	gå
 goal	mål
-good	Bra
+good	bra
 government	regering
 great	bra
 green	grön
@@ -384,7 +384,7 @@ his	hans
 history	historia
 hit	träffa
 hold	håll
-home	Hem
+home	hem
 hope	hoppas
 hospital	sjukhus
 hot	varm
@@ -397,18 +397,18 @@ huge	enorm
 human	mänsklig
 hundred	hundra
 husband	man
-I	jag
+i	jag
 idea	aning
 identify	identifiera
 if	om
 image	bild
 imagine	tänka
 impact	inverkan
-important	Viktig
+important	viktig
 improve	förbättra
 in	i
 include	omfatta
-including	Inklusive
+including	inklusive
 increase	öka
 indeed	verkligen
 indicate	ange
@@ -426,15 +426,15 @@ into	in i
 investment	investering
 involve	engagera
 issue	problem
-it	Det
-item	Artikel
+it	det
+item	artikel
 its	dess
 itself	sig
 job	jobb
 join	ansluta sig
 just	bara
 keep	ha kvar
-key	nyckel-
+key	nyckel
 kid	unge
 kill	döda
 kind	snäll
@@ -497,7 +497,7 @@ market	marknadsföra
 marriage	äktenskap
 material	material
 matter	materia
-may	Maj
+may	maj
 maybe	kanske
 me	mig
 mean	betyda
@@ -513,27 +513,27 @@ message	meddelande
 method	metod
 middle	mitten
 might	makt
-military	militär-
+military	militär
 million	miljon
 mind	sinne
 minute	minut
-miss	Fröken
+miss	fröken
 mission	uppdrag
 model	modell
 modern	modern
 moment	ögonblick
 money	pengar
 month	månad
-more	Mer
-morning	morgon-
+more	mer
+morning	morgon
 most	mest
 mother	mor
 mouth	mun
 move	flytta
 movement	rörelse
 movie	film
-Mr	herr
-Mrs	Fru
+mr	herr
+mrs	fru
 much	mycket
 music	musik
 must	måste
@@ -551,12 +551,12 @@ need	behöver
 network	nätverk
 never	aldrig
 new	ny
-news	Nyheter
+news	nyheter
 newspaper	tidning
-next	Nästa
+next	nästa
 nice	trevlig
 night	natt
-no	Nej
+no	nej
 none	ingen
 nor	inte heller
 north	norr
@@ -634,7 +634,7 @@ plan	planen
 plant	växt
 play	spela
 player	spelare
-PM	E.M
+pm	e.m
 point	punkt
 police	polis
 policy	politik
@@ -652,7 +652,7 @@ prepare	förbereda
 present	närvarande
 president	president
 pressure	tryck
-pretty	Söt
+pretty	söt
 prevent	förhindra
 price	pris
 private	privat
@@ -683,7 +683,7 @@ race	lopp
 radio	radio
 raise	höja
 range	räckvidd
-rate	Betygsätta
+rate	betygsätta
 rather	snarare
 reach	nå
 read	läsa
@@ -710,7 +710,7 @@ remember	kom ihåg
 remove	avlägsna
 report	rapportera
 represent	representera
-Republican	Republikan
+republican	republikan
 require	behöva
 research	forskning
 resource	resurs
@@ -811,16 +811,16 @@ space	rymden
 speak	tala
 special	särskild
 specific	specifik
-speech	Tal
+speech	tal
 spend	spendera
 sport	sport
 spring	vår
 staff	personal
 stage	skede
 stand	stå
-standard	standard-
+standard	standard
 star	stjärna
-start	Start
+start	start
 state	stat
 statement	påstående
 station	station
@@ -829,7 +829,7 @@ step	steg
 still	fortfarande
 stock	stock
 stop	sluta
-store	Lagra
+store	lagra
 story	berättelse
 strategy	strategi
 street	gata
@@ -847,8 +847,8 @@ suddenly	plötsligt
 suffer	lida
 suggest	föreslå
 summer	sommar
-support	Stöd
-sure	Säker
+support	stöd
+sure	säker
 surface	yta
 system	systemet
 table	tabell
@@ -891,7 +891,7 @@ three	tre
 through	genom
 throughout	genom hela
 throw	kasta
-thus	Således
+thus	således
 time	tid
 to	till
 today	i dag
@@ -915,9 +915,9 @@ trip	resa
 trouble	problem
 true	sann
 truth	sanning
-try	Prova
+try	prova
 turn	sväng
-TV	tv
+tv	tv
 two	två
 type	typ
 under	under
@@ -953,7 +953,7 @@ week	vecka
 weight	vikt
 well	väl
 west	väster
-western	Västra
+western	västra
 what	vad
 whatever	vad som helst
 when	när
@@ -966,7 +966,7 @@ who	vem
 whole	hela
 whom	vem
 whose	vars
-why	Varför
+why	varför
 wide	bred
 wife	fru
 will	kommer
