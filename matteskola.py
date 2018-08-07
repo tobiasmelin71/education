@@ -69,8 +69,8 @@ def subtraktion():
         print "Fel. Rätt svar är", a - b
 
 def multiplikation():
-    a = randint(0, 3*level)
-    b = randint(0, 3*level)
+    a = randint(2, 3*level)
+    b = randint(2, 3*level)
     print "\r\n", a, "*", b,"=",
     svar = input()
     if (a * b) == svar:
