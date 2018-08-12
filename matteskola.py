@@ -9,6 +9,7 @@ import os
 import random
 import re
 import sys
+import time
 from random import randint
 
 class status(object):
@@ -31,6 +32,15 @@ class status(object):
     def getTotal(self):
         return (self.nofCorrect + self.nofFail)
 
+def numInput():
+    while True:
+        try:
+            number = int(input())
+            return number
+            break
+        except:
+            print "Du måste svara med ett tal"
+
 def select():
     print "Välj vad du vill träna på:"
     print "\t Tryck a för addition"
@@ -44,13 +54,14 @@ def addition():
     a = randint(0, 10*level)
     b = randint(0, 10*level)
     print "\r\n", a, "+", b,"=",
-    svar = input()
+    svar = numInput()
     if (a + b) == svar:
         myStatus.incrementNofCorrect()
-        print "Rätt. Du har svarat rätt", myStatus.getNofCorrect(),  "av", myStatus.getTotal(), "gånger"
+        print "Rätt. Du har svarat rätt", myStatus.getNofCorrect(),  "av", myStatus.getTotal(), "gånger på",
     else:
         myStatus.incrementNofFail()
         print "Fel. Rätt svar är", a + b
+    return svar
 
 def subtraktion():
     a = randint(0, 10*level)
@@ -60,37 +71,40 @@ def subtraktion():
         b = a
         a = c
     print "\r\n", a, "-", b,"=",
-    svar = input()
+    svar = numInput()
     if (a - b) == svar:
         myStatus.incrementNofCorrect()
-        print "Rätt. Du har svarat rätt", myStatus.getNofCorrect(),  "av", myStatus.getTotal(), "gånger"
+        print "Rätt. Du har svarat rätt", myStatus.getNofCorrect(),  "av", myStatus.getTotal(), "gånger på",
     else:
         myStatus.incrementNofFail()
         print "Fel. Rätt svar är", a - b
+    return svar
 
 def multiplikation():
     a = randint(2, 3*level)
     b = randint(2, 3*level)
     print "\r\n", a, "*", b,"=",
-    svar = input()
+    svar = numInput()
     if (a * b) == svar:
         myStatus.incrementNofCorrect()
-        print "Rätt. Du har svarat rätt", myStatus.getNofCorrect(),  "av", myStatus.getTotal(), "gånger"
+        print "Rätt. Du har svarat rätt", myStatus.getNofCorrect(),  "av", myStatus.getTotal(), "gånger på",
     else:
         myStatus.incrementNofFail()
         print "Fel. Rätt svar är", a * b
+    return svar
 
 def division():
     a = randint(1, 3*level)
     b = randint(0, 3*level)  
     print "\r\n", a * b, "/", a, "=",
-    svar = input()
+    svar = numInput()
     if (b) == svar:
         myStatus.incrementNofCorrect()
-        print "Rätt. Du har svarat rätt", myStatus.getNofCorrect(),  "av", myStatus.getTotal(), "gånger"
+        print "Rätt. Du har svarat rätt", myStatus.getNofCorrect(),  "av", myStatus.getTotal(), "gånger på",
     else:
         myStatus.incrementNofFail()
         print "Fel. Rätt svar är", b
+    return svar
 
 # Parse command line arguments
 argparser = argparse.ArgumentParser(description="Matteskola för Tova och Erik.")
@@ -105,6 +119,7 @@ print "Välkommen till Eriks och Tovas matteskola\n\r"
 random.seed()
 myStatus = status()
 raknesatt = select()
+startTime = time.time()
 
 while True:
     valtRaknesatt = raknesatt
@@ -113,13 +128,17 @@ while True:
         slumptal = randint(0, 3)
         valtRaknesatt = listaMedRaknesatt[slumptal]
     if valtRaknesatt is "a":
-        addition()
+        retValue = addition()
     if valtRaknesatt is "s":
-        subtraktion()
+        retValue = subtraktion()
     if valtRaknesatt is "m":
-        multiplikation()
+        retValue = multiplikation()
     if valtRaknesatt is "d":
-        division()
+        retValue = division()
+    if retValue == -1:
+        break
+    currentTime = time.time()
+    print int(currentTime - startTime), "sekunder"
 
 sys.exit(0)
 
