@@ -47,6 +47,7 @@ def select():
     print "\t Tryck s för subtraktion"
     print "\t Tryck m för multiplikation"
     print "\t Tryck d för division"
+    print "\t Tryck v för avrundning"
     print "\t Tryck b för blandat med alla räknesätten"   
     return (raw_input())
 
@@ -106,6 +107,26 @@ def division():
         print "Fel. Rätt svar är", b
     return svar
 
+def approximation():
+    a = randint(1000, 9999)
+    nofZeros = randint(1, 3)
+    precision = 10 ** nofZeros
+    b = ((a + precision / 2) // precision) * precision
+    if nofZeros == 1:
+       print "\r\nAvrunda", a, "till närmaste tiotal",
+    elif nofZeros == 2:
+       print "\r\nAvrunda", a, "till närmaste hundratal",
+    else:
+       print "\r\nAvrunda", a, "till närmaste tusental",
+    svar = numInput()
+    if (b) == svar:
+        myStatus.incrementNofCorrect()
+        print "Rätt. Du har svarat rätt", myStatus.getNofCorrect(),  "av", myStatus.getTotal(), "gånger på",
+    else:
+        myStatus.incrementNofFail()
+        print "Fel. Rätt svar är", b
+    return svar
+
 # Parse command line arguments
 argparser = argparse.ArgumentParser(description="Matteskola för Tova och Erik.")
 argparser.add_argument("-l", "--level",
@@ -135,6 +156,8 @@ while True:
         retValue = multiplikation()
     if valtRaknesatt is "d":
         retValue = division()
+    if valtRaknesatt is "v":
+        retValue = approximation()
     if retValue == -1:
         break
     currentTime = time.time()
