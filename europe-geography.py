@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-#run this program in a terminal with: python matteskola.py --level 1
+#run this program in a terminal with: python europe-geography.py --level 1
 #tested on Ubuntu 16.04
 
 import argparse
@@ -32,9 +32,10 @@ level = eval(args.level)
 
 print "Välkommen till Geografi Europa\n\r"
 def select():
-    print "Välj vad du vill träna på:"
-    print "\t Tryck 1 för svenska till engelska"
-    print "\t Tryck 2 för engelska till svenska"  
+    print "Välj vad du vill träna på?"
+    print "\t Tryck a för frågor typ: Vad heter huvudstaden i ...?"
+    print "\t Tryck b för frågor typ: I vilket land är ... huvudstad?"
+    print "\t Tryck c för blandat med båda typerna av frågor"
     return (raw_input())
 
 csvDelimiter = ', '
@@ -46,9 +47,19 @@ with open("contries-capitals.txt") as f:
       pairs.append(next);
 f.close()
 
+random.seed()
+level = eval(args.level) # currently not used
+typeOfQuestion = select()
+print typeOfQuestion
+
 while True:
-    a = randint(0, 1)
-    if a == 0:
+    if typeOfQuestion is "a":
+        selector = 0
+    elif typeOfQuestion is "b":
+        selector = 1
+    else:
+        selector = randint(0, 1)
+    if selector == 0:
         r = randint(0, len(pairs) - 1)
         print "\r\nVad heter huvudstaden i", pairs[r].getCountry(), "?",
         svar = raw_input()
