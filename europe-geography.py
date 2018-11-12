@@ -50,7 +50,6 @@ f.close()
 random.seed()
 level = eval(args.level) # currently not used
 typeOfQuestion = select()
-print typeOfQuestion
 
 while True:
     if typeOfQuestion is "a":
