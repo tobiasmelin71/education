@@ -31,15 +31,15 @@ def numInput():
             print "Du måste svara med ett tal"
 
 # Parse command line arguments
-argparser = argparse.ArgumentParser(description="Öva multiplikation.")
+argparser = argparse.ArgumentParser(description="Öva subtraktion.")
 argparser.add_argument("--start",
                         required = True,
                         dest = "start",
-                        help = "minsta faktor")
+                        help = "minsta term")
 argparser.add_argument("--stop",
                         required = True,
                         dest = "stop",
-                        help = "högsta faktor")
+                        help = "högsta term")
 args = argparser.parse_args()
 start = eval(args.start)
 stop = eval(args.stop)
@@ -47,7 +47,7 @@ stop = eval(args.stop)
 problems = []
 nOfProblems = 0
 for i in range(start, stop + 1):
-    for j in range(start, stop + 1):
+    for j in range(i, stop + 1):
         next = Tuple (i, j)
         problems.append(next)
         nOfProblems = nOfProblems + 1
@@ -59,10 +59,10 @@ startTime = time.time()
 
 while nOfProblems > 0:
     r = randint(0, nOfProblems - 1)
-    factorX = int(problems[r].getX())
-    factorY = int(problems[r].getY())
-    correctAnswer = factorX * factorY
-    print factorX, "*", factorY, "=",
+    termX = int(problems[r].getX())
+    termY = int(problems[r].getY())
+    correctAnswer = termY - termX
+    print termY, "-", termX, "=",
 
     usersAnswer = numInput()
     nOfAnswers = nOfAnswers + 1
