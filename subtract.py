@@ -40,17 +40,34 @@ argparser.add_argument("--stop",
                         required = True,
                         dest = "stop",
                         help = "högsta term")
+argparser.add_argument("--full",
+                        required = False,
+                        dest = "full",
+                        action='store_true',
+                        help = "ha med alla kombinationer som kan förekomma i en uppställning")
+
 args = argparser.parse_args()
 start = eval(args.start)
 stop = eval(args.stop)
 
 problems = []
 nOfProblems = 0
-for i in range(start, stop + 1):
-    for j in range(i, stop + 1):
-        next = Tuple (i, j)
-        problems.append(next)
-        nOfProblems = nOfProblems + 1
+
+if args.full:
+    for i in range(start, stop + 1):
+        for j in range(start, stop + 1):
+            if j < i:
+                next = Tuple (i, 10 + j)
+            else:
+                next = Tuple (i, j)
+            problems.append(next)
+            nOfProblems = nOfProblems + 1
+else:
+    for i in range(start, stop + 1):
+        for j in range(i, stop + 1):
+            next = Tuple (i, j)
+            problems.append(next)
+            nOfProblems = nOfProblems + 1
 
 random.seed()
 nOfCorrectAnswers = 0
